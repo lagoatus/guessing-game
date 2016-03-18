@@ -1,0 +1,14 @@
+div {
+  background-color: rgb(29,29,29);
+}
+body {
+  font-family: helvetica, Verdana, sans-serif;
+  color: rgb(132,134,132);
+  }
+
+* {
+  text-align: center;
+}
+title {
+  font-size: 24;
+}

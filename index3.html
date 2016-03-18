@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>A HISTORY OF AARON</title>
+<title>CODE FELLOWS PROFILE</title>
+<link href="new.css" type="text/css" rel="stylesheet"/>
 </head>
   <body>
-
-<H1> A Brief History of Aaron Beerman
-</H1>
+    <div style="background-color: rgb(29,29,29)">
+<h2><b>CODE FELLOWS PROFILE</b></h2>
+<h1><b>AARON P. BEERMAN</b></h1>
 <script type="text/javascript">
         var guessCorrect = 0;
         console.log ("Q1: Ask the user what state I'm from")
@@ -22,8 +23,7 @@
           alert("Sorry wrong answer! I was actually born in Idaho")
           console.log ("Answer is false. Check parameter format")
       }
-</script>
-  <script type="text/javascript">
+
         var question2 = prompt("What university do you think is my alma mater?");
         if((question2 == 'University of Oregon') || (question2 == 'U of O') || (question2 == 'u of o') || (question2 == 'university of oregon'))
         {
@@ -36,9 +36,7 @@
           alert("Sorry wrong answer! I attended the University of Oregon")
           console.log ("Query 2 Response: False, check format style of paramater for alma mater question")
         }
-  </script>
 
-  <script type="text/javascript">
         var question3 = prompt("What type of profession do you think I have?");
         if((question3 == 'mover') || (question3 == 'MOVER') || (question3 == 'PREFESSIONAL MOVER') || (question3 == 'prefessional mover'))
       {
@@ -51,20 +49,31 @@
           alert("Sorry wrong answer! I help move people and things")
           console.log ("Inaccurate response to profession query")
       }
-  </script>
-  <script type="text/javascript">
+
   var correctAnswer = 29
   var userGuess = parseInt(prompt("What age do you think I am?"));
-  var correctGuess = (userGuess == correctAnswer);
+  //var correctGuess = (userGuess == correctAnswer);
   //if ((userGuess - correctAnswer < 2) & (userGuess - correctAnswer > -2)) {alert("That was close");}
-  if(userGuess == correctAnswer) {alert("You're brilliant!");
-  guessCorrect += 1;
-    console.log ("Query 4 Response: This is the correct answer to alma mater")
-  }
-    else (!correctGuess)
-  {alert("That wasn't it...");
-    console.log ("Not correct response, review answer to check spelling usage i.e. numerical or letter based.")
-  }
+    if(userGuess == correctAnswer) {alert("You're brilliant!");
+    guessCorrect += 1;
+      console.log ("Query 4 Response: This is the correct answer to alma mater")
+    }
+
+      else ((userGuess > 29) || (userGuess<29))
+    {alert("That wasn't it...");
+      console.log ("Not correct response, review answer to check spelling usage i.e. numerical or letter based.")
+    }
+
+  //if (userGuess < correctAnswer) {
+    //  alert("Your are too low!!!");
+  //}
+  //else if (userGuess > correctGuess) {
+  //        alert("You are too high!!!");
+  //    }
+  //else (userGuess == correctAnswer) {
+  //        alert("Correct, You are the winner!!!");
+  //    }
+
   if (guessCorrect == 4) {
      alert("Great job! You got all 4 questions correct.")}
      else if (guessCorrect == 0) {alert("You got none correct.... embarrassing!")
@@ -76,21 +85,30 @@
      else {alert ("3 out of 4 isn't bad")
      }
   </script>
-
-
-
-      <h1>BIOGRAPHY</h1>
-      <p>I've lived in many places in the northwest but I was born in 1986 in Salmon, ID.
-      I've spent most of the last 15 years living in Oregon, nine of these in the Portland area.</p>
-      <h1>RECENT EXPERIENCE</h1>
+      <h2>BIOGRAPHY</h2>
+      <p>I've lived in many places in the northwest but I was born in 1986 in Salmon, ID. I can't say it's a hometown that I know. I've only been there once since I one years old.
+        Most of the last 15 years I've lived here in Oregon. I've also spent time living in South Africa. I worked at a refugee center in Cape Town. Some fun facts, I enjoy spending my spare time out of doors. Mostly I like to bird watch and mountaineer. I happen to be dual-citizen because my mother is Canadian. </p>
+      <h2>EXPERIENCE</h2>
       <p>
-					Professinal Mover, Moving Department, Oregon Conference of SDA, Gladstone, OR (2014 - 2016)
-          Self-reliance and Psycho-social Department Coordinator, Cape Town Refugee Centre, Cape Town, SA (2011)</p>
-      <h1>EDUCATION</h1>
-      <p> University of Oregon, Eugene, OR Sept. 2009 - March 2012 Bachelor of Arts: International Development
-    </p>
+					<ul>
+          <li>Professional Mover, Moving Department, Oregon Conference of SDA, Gladstone, OR (2014 - 2016)</li>
+          <li>Technician, B.I.L. Quality Forage, Inc., Moose Jaw, SK, CA(2015)</li>
+          <li>Self-reliance Department Coordinator, Cape Town Refugee Centre, Cape Town, South Africa (2011)</li>
+        </ul>
+      </p>
+      <h2>EDUCATION</h2>
+      <p>University of Oregon: Bachelor of Arts - International Development (2012)
+      </p>
 
-      <h1>GOALS</h1>
-      <p> Develop professional skills in the field of software development for new career</p>
+      <h2>GOALS</h2>
+      <p>
+        <ul>
+          <li>Develop professional skills in the field of software development for a new  and intriguing career.</li>
+          <li> </li>
+          <li> </li>
+          <li> </li>
+        </ul
+      ></p>
+    </div>
     </body>
 </html>
