@@ -8,83 +8,7 @@
     <div style="background-color: rgb(29,29,29)">
 <h2><b>CODE FELLOWS PROFILE</b></h2>
 <h1><b>AARON BEERMAN</b></h1>
-<script type="text/javascript">
-        var guessCorrect = 0;
-        console.log ("Q1: Ask the user what state I'm from")
-        var question1= prompt("Which state do you think I was born in?");
-        if((question1 == 'Idaho') || (question1 == 'IDAHO') || (question1 == 'idaho'))
-      {
-          alert("Wow, good guess!")
-          guessCorrect += 1;
-          console.log ("Query 1 Response: User answer is correct, I was born in Idaho")
-      }
-      else
-      {
-          alert("Sorry wrong answer! I was actually born in Idaho")
-          console.log ("Answer is false. Check parameter format")
-      }
 
-        var question2 = prompt("What university do you think is my alma mater?");
-        if((question2 == 'University of Oregon') || (question2 == 'U of O') || (question2 == 'u of o') || (question2 == 'university of oregon'))
-        {
-          alert("Wow, good guess!")
-          guessCorrect += 1;
-          console.log ("This is the correct answer to alma mater")
-        }
-        else
-        {
-          alert("Sorry wrong answer! I attended the University of Oregon")
-          console.log ("Query 2 Response: False, check format style of paramater for alma mater question")
-        }
-
-        var question3 = prompt("What type of profession do you think I have?");
-        if((question3 == 'mover') || (question3 == 'MOVER') || (question3 == 'PREFESSIONAL MOVER') || (question3 == 'prefessional mover'))
-      {
-          alert("Yes! You're good at this!")
-          guessCorrect += 1;
-          console.log ("Query 3 Response: This is the correct response for profession query")
-      }
-      else
-      {
-          alert("Sorry wrong answer! I help move people and things")
-          console.log ("Inaccurate response to profession query")
-      }
-
-  var correctAnswer = 29
-  var userGuess = parseInt(prompt("What age do you think I am?"));
-  //var correctGuess = (userGuess == correctAnswer);
-  //if ((userGuess - correctAnswer < 2) & (userGuess - correctAnswer > -2)) {alert("That was close");}
-    if(userGuess == correctAnswer) {alert("You're brilliant!");
-    guessCorrect += 1;
-      console.log ("Query 4 Response: This is the correct answer to alma mater")
-    }
-
-      else ((userGuess > 29) || (userGuess<29))
-    {alert("That wasn't it...");
-      console.log ("Not correct response, review answer to check spelling usage i.e. numerical or letter based.")
-    }
-
-  //if (userGuess < correctAnswer) {
-    //  alert("Your are too low!!!");
-  //}
-  //else if (userGuess > correctGuess) {
-  //        alert("You are too high!!!");
-  //    }
-  //else (userGuess == correctAnswer) {
-  //        alert("Correct, You are the winner!!!");
-  //    }
-
-  if (guessCorrect == 4) {
-     alert("Great job! You got all 4 questions correct.")}
-     else if (guessCorrect == 0) {alert("You got none correct.... embarrassing!")
-     }
-     else if (guessCorrect == 1) {alert("You got 1 correct.")
-     }
-     else if (guessCorrect == 2) {alert("You got 2 correct. Pretty good.")
-     }
-     else {alert ("3 out of 4 isn't bad")
-     }
-  </script>
       <h2>BIOGRAPHY</h2>
       <p>I've lived in many places in the northwest but I was born in 1986 in Salmon, ID. I can't say it's a hometown that I know. I've only been there once since I one years old.
         Most of the last 15 years I've lived here in Oregon. I've also spent time living in South Africa. I worked at a refugee center in Cape Town. Some fun facts, I enjoy spending my spare time out of doors. Mostly I like to bird watch and mountaineer. I happen to be dual-citizen because my mother is Canadian. </p>
@@ -109,6 +33,96 @@
           <li> </li>
         </ul
       ></p>
+
+      <p><h1>User Answers</h1>
+
+              <ol>
+                <li id="1"></li>
+                <li id="2"></li>
+                <li id="3"></li>
+                <li id="4"></li>
+                <li id="5"></li>
+              </ol>
+
+      </p>
     </div>
+
+    <script type="text/javascript">
+        var guessCorrect = 0;
+        console.log ("Q1: Ask the user what state I'm from")
+        var question1= prompt("Which state do you think I was born in?");
+        if((question1 == 'Idaho') || (question1 == 'IDAHO') || (question1 == 'idaho'))
+      {
+          document.getElementById("1").innerHTML="Wow, good guess!"
+          guessCorrect += 1;
+          console.log ("Query 1 Response: User answer is correct, I was born in Idaho")
+      }
+      else
+      {
+          document.getElementById("1").innerHTML="Sorry wrong answer! I was actually born in Idaho"
+          console.log ("Answer is false. Check parameter format")
+      }
+
+        var question2 = prompt("What university do you think is my alma mater?");
+        if((question2 == 'University of Oregon') || (question2 == 'U of O') || (question2 == 'u of o') || (question2 == 'university of oregon'))
+        {
+          document.getElementById("2").innerHTML="Wow, good guess!"
+          guessCorrect += 1;
+          console.log ("This is the correct answer to alma mater")
+        }
+        else
+        {
+          document.getElementById("2").innerHTML="Sorry wrong answer! I attended the University of Oregon"
+          console.log ("Query 2 Response: False, check format style of paramater for alma mater question")
+        }
+
+        var question3 = prompt("What type of profession do you think I have?");
+        if((question3 == 'mover') || (question3 == 'MOVER') || (question3 == 'PREFESSIONAL MOVER') || (question3 == 'prefessional mover'))
+      {
+          document.getElementById("3").innerHTML="Yes! You're good at this!"
+          guessCorrect += 1;
+          console.log ("Query 3 Response: This is the correct response for profession query")
+      }
+      else
+      {
+          document.getElementById("3").innerHTML="Sorry wrong answer! I help move people and things"
+          console.log ("Inaccurate response to profession query")
+      }
+
+  var correctAnswer = 29
+  var userGuess = parseInt(prompt("What age do you think I am?"));
+  //var correctGuess = (userGuess == correctAnswer);
+  //if ((userGuess - correctAnswer < 2) & (userGuess - correctAnswer > -2)) {alert("That was close");}
+    if(userGuess == correctAnswer) {document.getElementById("4").innerHTML="You're brilliant!";
+    guessCorrect += 1;
+      console.log ("Query 4 Response: This is the correct answer to alma mater")
+    }
+
+      else ((userGuess > 29) || (userGuess<29))
+    {document.getElementById("4").innerHTML="That wasn't it...";
+      console.log ("Not correct response, review answer to check spelling usage i.e. numerical or letter based.")
+    }
+
+  //if (userGuess < correctAnswer) {
+    //  alert("Your are too low!!!");
+  //}
+  //else if (userGuess > correctGuess) {
+  //        alert("You are too high!!!");
+  //    }
+  //else (userGuess == correctAnswer) {
+  //        alert("Correct, You are the winner!!!");
+  //    }
+
+  if (guessCorrect == 4) {
+     document.getElementById("5").innerHTML="Great job! You got all 4 questions correct."}
+     else if (guessCorrect == 0) {document.getElementById("5").innerHTML="You got none correct.... embarrassing!"
+     }
+     else if (guessCorrect == 1) {document.getElementById("5").innerHTML="You got 1 correct."
+     }
+     else if (guessCorrect == 2) {document.getElementById("5").innerHTML="You got 2 correct. Pretty good."
+     }
+     else {document.getElementById("5").innerHTML="3 out of 4 isn't bad"
+     }
+  </script>
     </body>
 </html>
