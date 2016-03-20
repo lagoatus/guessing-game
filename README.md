@@ -14,4 +14,4 @@ URL:https://github.com/aminasenge5/guessing-game.git
 
 Sunday Partner
 Driver: https://github.com/limongoo/guessing-game
-Navigator: https://github.com/lagoatus/Guessing201n
+Navigator: https://github.com/lagoatus/guessing-game.git
