@@ -11,3 +11,7 @@ Citations: Credit to Arielle Foldoe ideas for general code outline to count corr
 Paired Programming Update: Amina Senge (Partner)
 
 URL:https://github.com/aminasenge5/guessing-game.git
+
+Sunday Partner
+Driver: https://github.com/limongoo/guessing-game
+Navigator: https://github.com/lagoatus/Guessing201n
